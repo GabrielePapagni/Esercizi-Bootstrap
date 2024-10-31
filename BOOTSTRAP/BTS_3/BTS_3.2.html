@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BTS_3.2</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .circular-image {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                float: right;
+                margin-left: 15px;
+            }
+            .rounded-image {
+                width: 100%;
+                border-radius: 15px;
+            }
+            .thumbnail {
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="display-4">BTS_3.2</h1>
+        <div class="container mt-5">
+            <!-- Jumbotron -->
+            <div class="bg-info text-white p-5 mb-4 rounded">
+                <h2 class="lead">Ecco le tre immagini:</h2>
+            </div>
+
+            <!-- Immagini -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/150" alt="Immagine 1" class="circular-image">
+                </div>
+                <div class="col-md-6 thumbnail">
+                    <img src="https://via.placeholder.com/150" alt="Immagine 2" class="rounded-image">
+                </div>
+                <div class="col-md-12">
+                    <img src="https://via.placeholder.com/150" alt="Immagine 3" class="float-start rounded" style="width: 150px; margin-right: 15px;">
+                </div>
+            </div>
+
+            <!-- Alert -->
+            <div class="alert alert-success alert-dismissible fade show mt-4" role="alert">
+                <strong>Successo!</strong> Torna all'inizio della pagina <a href="#top" class="alert-link">qui</a>.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">Chiudi</button>
+            </div>
+
+            <!-- Bottoni -->
+            <div class="btn-group-vertical" role="group" aria-label="Bottoni">
+                <button type="button" class="btn btn-outline-primary">Button 1</button>
+                <button type="button" class="btn btn-outline-primary">Button 2</button>
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <li><a class="dropdown-item" href="#">Azione 1</a></li>
+                        <li><a class="dropdown-item" href="#">Azione 2</a></li>
+                        <li><a class="dropdown-item" href="#">Azione 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+        <title>BTS_2.2</title>
+        <style>
+            body {
+                background-color: #f8f9fa; /* Colore di sfondo chiaro */
+            }
+            .section-title {
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+                color: #343a40; /* Colore del titolo */
+            }
+            .opacity-50 {
+                opacity: 0.5;
+            }
+            .bg-warning-opacity {
+                background-color: rgba(255, 193, 7, 0.5); /* Sfondo warning con opacità */
+            }
+            dt {
+                font-weight: bold;
+            }
+            .bg-box {
+                border-radius: 5px;
+                padding: 15px;
+                margin-bottom: 1rem;
+                color: #000000;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container my-4">
+            <h1 class="text-center mb-4">BTS_2.2</h1>
+
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h2 class="section-title">Classi di Colore (Testo)</h2>
+                    <dl class="row">
+                        <dt class="col-sm-3 text-muted">.text-muted</dt>
+                        <dd class="col-sm-9">Utilizzato per un testo meno prominente.</dd>
+
+                        <dt class="col-sm-3 text-primary">.text-primary</dt>
+                        <dd class="col-sm-9">Colore primario, generalmente blu.</dd>
+
+                        <dt class="col-sm-3 text-success">.text-success</dt>
+                        <dd class="col-sm-9">Colore verde, utilizzato per successi o conferme.</dd>
+
+                        <dt class="col-sm-3 text-info">.text-info</dt>
+                        <dd class="col-sm-9">Colore blu chiaro, usato per informazioni.</dd>
+
+                        <dt class="col-sm-3 text-warning">.text-warning</dt>
+                        <dd class="col-sm-9">Colore giallo, usato per avvisi.</dd>
+
+                        <dt class="col-sm-3 text-danger">.text-danger</dt>
+                        <dd class="col-sm-9">Colore rosso, usato per errori o pericoli.</dd>
+
+                        <dt class="col-sm-3 text-secondary">.text-secondary</dt>
+                        <dd class="col-sm-9">Colore grigio scuro, usato per testi secondari.</dd>
+
+                        <dt class="col-sm-3 text-white bg-dark p-2">.text-white</dt>
+                        <dd class="col-sm-9">Colore bianco, usato su sfondi scuri.</dd>
+
+                        <dt class="col-sm-3 text-dark">.text-dark</dt>
+                        <dd class="col-sm-9">Colore nero o grigio scuro, usato per testi prominenti.</dd>
+
+                        <dt class="col-sm-3 text-body">.text-body</dt>
+                        <dd class="col-sm-9">Colore di testo principale, solitamente un grigio scuro.</dd>
+
+                        <dt class="col-sm-3 text-light bg-dark p-2">.text-light</dt>
+                        <dd class="col-sm-9">Colore chiaro, usato su sfondi scuri.</dd>
+                    </dl>
+                </div>
+
+                <div class="col-md-6">
+                    <h2 class="section-title">Classi di Colore (Sfondo)</h2>
+                    <dl class="row">
+                        <dt class="col-sm-3 bg-muted text-white p-2 bg-box">.bg-muted</dt>
+                        <dd class="col-sm-9">Utilizzato per uno sfondo meno prominente.</dd>
+
+                        <dt class="col-sm-3 bg-primary text-white p-2 bg-box">.bg-primary</dt>
+                        <dd class="col-sm-9">Sfondo primario, generalmente blu.</dd>
+
+                        <dt class="col-sm-3 bg-success text-white p-2 bg-box">.bg-success</dt>
+                        <dd class="col-sm-9">Sfondo verde, utilizzato per successi o conferme.</dd>
+
+                        <dt class="col-sm-3 bg-info text-white p-2 bg-box">.bg-info</dt>
+                        <dd class="col-sm-9">Sfondo blu chiaro, usato per informazioni.</dd>
+
+                        <dt class="col-sm-3 bg-warning text-dark p-2 bg-box">.bg-warning</dt>
+                        <dd class="col-sm-9">Sfondo giallo, usato per avvisi.</dd>
+
+                        <dt class="col-sm-3 bg-danger text-white p-2 bg-box">.bg-danger</dt>
+                        <dd class="col-sm-9">Sfondo rosso, usato per errori o pericoli.</dd>
+
+                        <dt class="col-sm-3 bg-secondary text-white p-2 bg-box">.bg-secondary</dt>
+                        <dd class="col-sm-9">Sfondo grigio scuro, usato per elementi secondari.</dd>
+
+                        <dt class="col-sm-3 bg-white text-dark p-2">.bg-white</dt>
+                        <dd class="col-sm-9">Sfondo bianco, usato per testi scuri.</dd>
+
+                        <dt class="col-sm-3 bg-dark text-white p-2">.bg-dark</dt>
+                        <dd class="col-sm-9">Sfondo nero o grigio scuro, usato per contrasto.</dd>
+
+                        <dt class="col-sm-3 bg-light text-dark p-2">.bg-light</dt>
+                        <dd class="col-sm-9">Sfondo chiaro, usato per testi scuri.</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <h2 class="section-title">Testo con Opacità</h2>
+                    <p class="opacity-50">Questo testo ha un'opacità del 50%.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-title">Testo Bianco con Opacità su Sfondo Warning</h2>
+                    <p class="bg-warning text-white opacity-50 p-3">Questo testo è bianco con un'opacità del 50% su uno sfondo di avviso.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
